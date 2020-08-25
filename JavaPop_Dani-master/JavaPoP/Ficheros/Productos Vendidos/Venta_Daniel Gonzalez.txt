@@ -1,0 +1,12 @@
+Nombre producto: Accesorio consola
+Descripción: Accesorios para la Wii
+Categoria: Consolas y videojuegos
+Estado: Regular
+Precio: 20.3
+Fecha Publicación: 20/11/2005
+Ubicación: Meco
+Fecha: 2020-05-10
+Nombre Vendedor: Javier
+DNI Vendedor: 82800809G
+Nombre Comprador: Daniel Gonzalez
+DNI Comprador: 03215238E

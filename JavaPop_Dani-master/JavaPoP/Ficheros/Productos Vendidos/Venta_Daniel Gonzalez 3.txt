@@ -1,0 +1,12 @@
+Nombre producto: Collar de perlas
+Descripción: Collar de mi tía Manoli
+Categoria: Moda y accesorios
+Estado: Como nuevo
+Precio: 35.0
+Fecha Publicación: 10/5/2010
+Ubicación: Girona
+Fecha: 2020-05-10
+Nombre Vendedor: Jusep
+DNI Vendedor: 54743932E
+Nombre Comprador: Daniel Gonzalez 3
+DNI Comprador: 03215238E

@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaPoP">
+  <ClassDiagramComponents>
+    <Class name="ClienteProfesionalPremium" package="Graphic_Interface" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="Cliente" type="Cliente" visibility="private" isStatic="true"/>
+        <Field name="btn_Cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Premium" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_CP" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Descripción" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Telefono" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Web" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ta_Descripcion" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tf_Horario" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Telefono" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Web" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Cliente" name="Cliente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_PremiumActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="comprobar" returnType="boolean" visibility="private"/>
+        <Method name="comprobarTelefono" returnType="boolean" visibility="private"/>
+        <Method name="compruebaNumero" returnType="boolean" visibility="private">
+          <Argument type="String" name="text"/>
+          <Argument type="String" name="msg"/>
+          <Argument type="String" name="error"/>
+          <Argument type="int" name="ERROR_MESSAGE"/>
+        </Method>
+        <Method name="comprobarWeb" returnType="boolean" visibility="private"/>
+        <Method name="eliminarClienteNormal" returnType="void" visibility="private"/>
+        <Method name="readUsers" returnType="ArrayList&lt;Cliente&gt;" visibility="public" isStatic="true"/>
+        <Method name="guardarUsuario" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="MainMenuAdmin" package="Graphic_Interface" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="btn_CP" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_CU" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_CV" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Exit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Text" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_CUActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CPActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CVActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_ExitActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inicio" package="Graphic_Interface" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="Productos" type="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+        <Field name="Usuarios" type="ArrayList&lt;Cliente&gt;" visibility="public" isStatic="true"/>
+        <Field name="Ventas" type="ArrayList&lt;Venta&gt;" visibility="public" isStatic="true"/>
+        <Field name="RutaUsuarios" type="String" visibility="public" isStatic="true"/>
+        <Field name="RutaProductos" type="String" visibility="public" isStatic="true"/>
+        <Field name="RutaVentas" type="String" visibility="public" isStatic="true"/>
+        <Field name="TipoUsuario" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="btn_Admin" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="btn_Login" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_NewUser" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Usuario" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="lbl_Contrasena" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_TipoUsuario" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Usuario" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="pf_Contrasena" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="pnl_IniciarSesion" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pnl_SeleccionUsuario" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tf_Usuario" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_LoginActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_NewUserActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="readUsers" returnType="ArrayList&lt;Cliente&gt;" visibility="public" isStatic="true"/>
+        <Method name="readProducts" returnType="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+        <Method name="readSales" returnType="ArrayList&lt;Venta&gt;" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="MainMenuCliente" package="Graphic_Interface" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="Cliente" type="Cliente" visibility="private" isStatic="true"/>
+        <Field name="btn_AP" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_BP" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Busqueda" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Exit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Premium" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Cliente" name="Cliente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_PremiumActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_APActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_BPActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_BusquedaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_ExitActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="setCliente" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Cliente" name="Cliente"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BajaProductos" package="Graphic_Interface" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="Cliente" type="Cliente" visibility="private" isStatic="true"/>
+        <Field name="ProductosLocal" type="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+        <Field name="btn_Baja" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cb_Producto" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Cliente" name="Cliente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_BajaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="guardarProductos" returnType="void" visibility="private"/>
+        <Method name="cargaProductos" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="ConsultarVentas" package="Graphic_Interface" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="VentasLocal" type="ArrayList&lt;Venta&gt;" visibility="public" isStatic="true"/>
+        <Field name="btnG_Fecha" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="btn_Buscar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Volver" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cb_Venta" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Categoria" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_DNIC" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_DNIV" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Descripcion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Estado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Euros" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_FechaP" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_FechaV" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Foto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_NC" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_NV" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_NombreP" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_PRODUCTO" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Precio" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Ubicacion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="rb_Fecha" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rb_Historico" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="ta_Descripcion" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tf_Categoria" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_DNIC" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_DNIV" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Estado" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Fecha" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_FechaP" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_FechaV" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_NC" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_NV" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_NombreP" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Precio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Ubicacion" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_BuscarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_VolverActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cb_VentaItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="Date" returnType="Date" visibility="private" isStatic="true">
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="ComprobarFecha" returnType="boolean" visibility="private" isStatic="true">
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="cambiarDatos" returnType="void" visibility="private"/>
+        <Method name="cambiarPersonas" returnType="void" visibility="private">
+          <Argument type="Venta" name="venta"/>
+        </Method>
+        <Method name="cambiarProducto" returnType="void" visibility="private">
+          <Argument type="Producto" name="producto"/>
+        </Method>
+        <Method name="buscarVenta" returnType="Venta" visibility="private"/>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="ConsultarProductos" package="Graphic_Interface" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="btn_Baja" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Volver" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cb_Producto" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Categoria" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Descripcion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Estado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Euro" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Fecha" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Imagen" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Imagen1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Nombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Precio" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Ubicacion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ta_Descripcion" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tf_Categoria" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Estado" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Fecha" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Nombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Precio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Ubicacion" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_BajaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_VolverActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cb_ProductoItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="cargaProductos" returnType="void" visibility="private"/>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+        <Method name="cambiarTexto" returnType="void" visibility="private"/>
+        <Method name="guardarProductos" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Busqueda" package="Graphic_Interface" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="ProductosLocal" type="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+        <Field name="cliente" type="Cliente" visibility="public" isStatic="true"/>
+        <Field name="btn_Comprar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Search" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Volver" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cb_Categoria" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_Producto" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Categoria" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Descripcion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Estado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Euro" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Fecha" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Imagen" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Imagen1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Nombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_PC" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Precio" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Ubicacion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ta_Descripcion" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tf_Categoria" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Estado" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Fecha" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Nombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_PC" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Precio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Ubicacion" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Cliente" name="cliente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="recalcularProximidad" returnType="ArrayList&lt;Producto&gt;" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Producto&gt;" name="categoria_ord"/>
+        </Method>
+        <Method name="proximidad" returnType="int" visibility="private" isStatic="true">
+          <Argument type="String" name="cod_post1"/>
+          <Argument type="String" name="cod_post2"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_VolverActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_ComprarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cb_ProductoItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="btn_SearchActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+        <Method name="cambiarTexto" returnType="void" visibility="private"/>
+        <Method name="busqueda" returnType="ArrayList" visibility="private" isStatic="true">
+          <Argument type="String" name="categoria"/>
+          <Argument type="String" name="palabra_clave"/>
+        </Method>
+        <Method name="ordenar" returnType="ArrayList" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Producto&gt;" name="categoria_ord"/>
+        </Method>
+        <Method name="cargaProductos" returnType="void" visibility="private"/>
+        <Method name="crearVenta" returnType="void" visibility="private">
+          <Argument type="Producto" name="productoComprado"/>
+        </Method>
+        <Method name="crearFichero" returnType="void" visibility="private">
+          <Argument type="Producto" name="productoComprado"/>
+        </Method>
+        <Method name="guardarVentas" returnType="void" visibility="private"/>
+        <Method name="eliminarProducto" returnType="void" visibility="private">
+          <Argument type="Producto" name="productoComprado"/>
+        </Method>
+        <Method name="readProducts" returnType="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+        <Method name="guardarProductos" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="NuevoUsuario" package="Graphic_Interface" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="Usuarios" type="ArrayList&lt;Cliente&gt;" visibility="public" isStatic="true"/>
+        <Field name="btnG_ID" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="btn_Cancell" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Create" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lbl_CCV" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_CP" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Ciudad" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Contrasena" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Contrasena1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Correo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Nombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Tarjeta" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="rb_DNI" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rb_NIE" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="tf_CCV" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_CP" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Ciudad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Contrasena" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Contrasena1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Correo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_DNI" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_NIE" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Nombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Tarjeta" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Cliente&gt;" name="Usuarios"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_CreateActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="rb_DNIActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="rb_NIEActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancellActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="comprobarContrasena" returnType="boolean" visibility="private"/>
+        <Method name="comprobarDNI" returnType="boolean" visibility="private"/>
+        <Method name="comprobarTarjeta" returnType="boolean" visibility="private"/>
+        <Method name="comporbarCP" returnType="boolean" visibility="private"/>
+        <Method name="compruebaNumero" returnType="boolean" visibility="private">
+          <Argument type="String" name="text"/>
+          <Argument type="String" name="msg"/>
+          <Argument type="String" name="error"/>
+          <Argument type="int" name="ERROR_MESSAGE"/>
+        </Method>
+        <Method name="compruebaNumeroLong" returnType="boolean" visibility="private">
+          <Argument type="String" name="text"/>
+          <Argument type="String" name="msg"/>
+          <Argument type="String" name="error"/>
+          <Argument type="int" name="ERROR_MESSAGE"/>
+        </Method>
+        <Method name="comprobarNIE" returnType="boolean" visibility="private"/>
+        <Method name="guardarUsuario" returnType="void" visibility="private"/>
+        <Method name="comprobarCorreo" returnType="boolean" visibility="private"/>
+        <Method name="comprobacion" returnType="boolean" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="AltaProductos" package="Graphic_Interface" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="Cliente" type="Cliente" visibility="private" isStatic="true"/>
+        <Field name="btn_Alta" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cb_Categoria" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cb_Estado" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Categoria" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Descripcion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Estado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Fecha" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Foto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Imagen" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Nombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Precio" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Ubicacion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ta_Descripcion" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tf_Fecha" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Nombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Precio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Ubicacion" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Cliente" name="cliente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_AltaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="comprobar" returnType="boolean" visibility="private"/>
+        <Method name="comprobarCategoria" returnType="boolean" visibility="private"/>
+        <Method name="comprobarEstado" returnType="boolean" visibility="private"/>
+        <Method name="comprobarPrecio" returnType="boolean" visibility="private"/>
+        <Method name="comprobarFecha" returnType="boolean" visibility="private"/>
+        <Method name="guardarProductos" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="ConsultarUsuarios" package="Graphic_Interface" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="btnG_ID" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="btn_Baja" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Volver" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cb_Usuario" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_CCV" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_CP" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_CP1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Ciudad" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Contrasena" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Contrasena1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Correo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Descripción" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_ID" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Nombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Tarjeta" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Telefono" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Web" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ta_Descripcion" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tf_CCV" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_CP" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Ciudad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Contrasena" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Contrasena1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Correo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Horario" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_ID" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Nombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Tarjeta" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Telefono" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tf_Web" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_BajaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cb_UsuarioItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="btn_VolverActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="cargarUsuarios" returnType="void" visibility="private"/>
+        <Method name="limpiar" returnType="void" visibility="private"/>
+        <Method name="cambiarTexto" returnType="void" visibility="private"/>
+        <Method name="guardarUsuario" returnType="void" visibility="private"/>
+        <Method name="guardarProductos" returnType="void" visibility="private"/>
+        <Method name="readProducts" returnType="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="ClienteProfesional" package="javapop" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="descripcion" type="String" visibility="public"/>
+        <Field name="horario" type="String" visibility="public"/>
+        <Field name="telefono" type="String" visibility="public"/>
+        <Field name="web" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="descripcion"/>
+          <Argument type="String" name="horario"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="web"/>
+          <Argument type="String" name="DNI"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="correo"/>
+          <Argument type="String" name="clave"/>
+          <Argument type="String" name="cod_postal"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="String" name="tjt_credito"/>
+          <Argument type="String" name="ccv"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getHorario" returnType="String" visibility="public"/>
+        <Method name="setHorario" returnType="void" visibility="public">
+          <Argument type="String" name="horario"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getWeb" returnType="String" visibility="public"/>
+        <Method name="setWeb" returnType="void" visibility="public">
+          <Argument type="String" name="web"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="javapop" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="DNI" type="String" visibility="public"/>
+        <Field name="nombre" type="String" visibility="public"/>
+        <Field name="correo" type="String" visibility="public"/>
+        <Field name="clave" type="String" visibility="public"/>
+        <Field name="cod_postal" type="String" visibility="public"/>
+        <Field name="ciudad" type="String" visibility="public"/>
+        <Field name="tjt_credito" type="String" visibility="public"/>
+        <Field name="CCV" type="String" visibility="public"/>
+        <Field name="estado" type="boolean" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="DNI"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="correo"/>
+          <Argument type="String" name="clave"/>
+          <Argument type="String" name="cod_postal"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="String" name="tjt_credito"/>
+          <Argument type="String" name="ccv"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCCV" returnType="String" visibility="public"/>
+        <Method name="setCCV" returnType="void" visibility="public">
+          <Argument type="String" name="CCV"/>
+        </Method>
+        <Method name="isEstado" returnType="boolean" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+        <Method name="getDNI" returnType="String" visibility="public"/>
+        <Method name="setDNI" returnType="void" visibility="public">
+          <Argument type="String" name="DNI"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getCorreo" returnType="String" visibility="public"/>
+        <Method name="setCorreo" returnType="void" visibility="public">
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="getClave" returnType="String" visibility="public"/>
+        <Method name="setClave" returnType="void" visibility="public">
+          <Argument type="String" name="clave"/>
+        </Method>
+        <Method name="getCod_postal" returnType="String" visibility="public"/>
+        <Method name="setCod_postal" returnType="void" visibility="public">
+          <Argument type="String" name="cod_postal"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="void" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getTjt_credito" returnType="String" visibility="public"/>
+        <Method name="setTjt_credito" returnType="void" visibility="public">
+          <Argument type="String" name="tjt_credito"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JavaPoP" package="javapop" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="Productos" type="ArrayList&lt;Producto&gt;" visibility="public" isStatic="true"/>
+        <Field name="Usuarios" type="ArrayList&lt;Cliente&gt;" visibility="public" isStatic="true"/>
+        <Field name="Ventas" type="ArrayList&lt;Venta&gt;" visibility="public" isStatic="true"/>
+        <Field name="Producto" type="Producto[]" visibility="public" isStatic="true"/>
+        <Field name="Usuario" type="Cliente[]" visibility="public" isStatic="true"/>
+        <Field name="cod_postal" type="String" visibility="public" isStatic="true"/>
+        <Field name="nombreUsuario" type="String" visibility="public" isStatic="true"/>
+        <Field name="DNIUsuario" type="String" visibility="public" isStatic="true"/>
+        <Field name="RutaUsuarios" type="String" visibility="public" isStatic="true"/>
+        <Field name="RutaProductos" type="String" visibility="public" isStatic="true"/>
+        <Field name="RutaVentas" type="String" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="ImprimeMenu" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="Date" returnType="Date" visibility="private" isStatic="true">
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="busqueda" returnType="ArrayList" visibility="private" isStatic="true">
+          <Argument type="String" name="categoria"/>
+          <Argument type="String" name="palabra_clave"/>
+        </Method>
+        <Method name="ordenar" returnType="ArrayList" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Producto&gt;" name="categoria_ord"/>
+        </Method>
+        <Method name="imprimeBusqueda" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Producto&gt;" name="lista"/>
+        </Method>
+        <Method name="imprimeUsuarios" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Cliente&gt;" name="lista"/>
+        </Method>
+        <Method name="imprimeArray" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Object[]" name="lista"/>
+        </Method>
+        <Method name="imprimeCategorias" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="isNumeric" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="cadena"/>
+        </Method>
+        <Method name="generarTicket" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Producto" name="productoComprado"/>
+        </Method>
+        <Method name="datosPersonales" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Scanner" name="entrada"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Administrador" package="javapop" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="correo" type="String" visibility="public"/>
+        <Field name="clave" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="correo"/>
+          <Argument type="String" name="clave"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCorreo" returnType="String" visibility="public"/>
+        <Method name="setCorreo" returnType="void" visibility="public">
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="getClave" returnType="String" visibility="public"/>
+        <Method name="setClave" returnType="void" visibility="public">
+          <Argument type="String" name="clave"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Venta" package="javapop" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="producto" type="Producto" visibility="public"/>
+        <Field name="fechaVenta" type="String" visibility="public"/>
+        <Field name="DNIComprador" type="String" visibility="public"/>
+        <Field name="DNIVendedor" type="String" visibility="public"/>
+        <Field name="nombreComprador" type="String" visibility="public"/>
+        <Field name="nombreVendedor" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Producto" name="producto"/>
+          <Argument type="String" name="fechaVenta"/>
+          <Argument type="String" name="DNIComprador"/>
+          <Argument type="String" name="DNIVendedor"/>
+          <Argument type="String" name="nombreComprador"/>
+          <Argument type="String" name="nombreVendedor"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getProducto" returnType="Producto" visibility="public"/>
+        <Method name="setProducto" returnType="void" visibility="public">
+          <Argument type="Producto" name="producto"/>
+        </Method>
+        <Method name="getFechaVenta" returnType="String" visibility="public"/>
+        <Method name="setFechaVenta" returnType="void" visibility="public">
+          <Argument type="String" name="fechaVenta"/>
+        </Method>
+        <Method name="getDNIComprador" returnType="String" visibility="public"/>
+        <Method name="setDNIComprador" returnType="void" visibility="public">
+          <Argument type="String" name="DNIComprador"/>
+        </Method>
+        <Method name="getDNIVendedor" returnType="String" visibility="public"/>
+        <Method name="setDNIVendedor" returnType="void" visibility="public">
+          <Argument type="String" name="DNIVendedor"/>
+        </Method>
+        <Method name="getNombreComprador" returnType="String" visibility="public"/>
+        <Method name="setNombreComprador" returnType="void" visibility="public">
+          <Argument type="String" name="nombreComprador"/>
+        </Method>
+        <Method name="getNombreVendedor" returnType="String" visibility="public"/>
+        <Method name="setNombreVendedor" returnType="void" visibility="public">
+          <Argument type="String" name="nombreVendedor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="javapop" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="public"/>
+        <Field name="descripcion" type="String" visibility="public"/>
+        <Field name="categoria" type="String" visibility="public"/>
+        <Field name="condicion" type="String" visibility="public"/>
+        <Field name="precio" type="double" visibility="public"/>
+        <Field name="fecha" type="String" visibility="public"/>
+        <Field name="ubicacion" type="String" visibility="public"/>
+        <Field name="propietario" type="Cliente" visibility="public"/>
+        <Field name="urgente" type="boolean" visibility="public"/>
+        <Field name="proximidad" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="descripcion"/>
+          <Argument type="String" name="categoria"/>
+          <Argument type="String" name="estado"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="fecha"/>
+          <Argument type="String" name="ubicacion"/>
+          <Argument type="Cliente" name="propietario"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="descripcion"/>
+          <Argument type="String" name="categoria"/>
+          <Argument type="String" name="estado"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="fecha"/>
+          <Argument type="String" name="ubicacion"/>
+          <Argument type="Cliente" name="propietario"/>
+          <Argument type="boolean" name="urgente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isUrgente" returnType="boolean" visibility="public"/>
+        <Method name="setUrgente" returnType="void" visibility="public">
+          <Argument type="boolean" name="urgente"/>
+        </Method>
+        <Method name="getPropietario" returnType="Cliente" visibility="public"/>
+        <Method name="setPropietario" returnType="void" visibility="public">
+          <Argument type="Cliente" name="propietario"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getCategoria" returnType="String" visibility="public"/>
+        <Method name="setCategoria" returnType="void" visibility="public">
+          <Argument type="String" name="categoria"/>
+        </Method>
+        <Method name="getCondicion" returnType="String" visibility="public"/>
+        <Method name="setCondicion" returnType="void" visibility="public">
+          <Argument type="String" name="condicion"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getFecha" returnType="String" visibility="public"/>
+        <Method name="setFecha" returnType="void" visibility="public">
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="getUbicacion" returnType="String" visibility="public"/>
+        <Method name="setUbicacion" returnType="void" visibility="public">
+          <Argument type="String" name="ubicacion"/>
+        </Method>
+        <Method name="getProximidad" returnType="int" visibility="public"/>
+        <Method name="setProximidad" returnType="void" visibility="public">
+          <Argument type="int" name="proximidad"/>
+        </Method>
+        <Method name="proximidad" returnType="int" visibility="private" isStatic="true">
+          <Argument type="String" name="cod_post1"/>
+          <Argument type="String" name="cod_post2"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Usuarios" source="Graphic_Interface.Inicio" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Cliente&gt;"/>
+    <UseRelation source="Graphic_Interface.Inicio" target="javapop.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Graphic_Interface.ConsultarVentas" target="javapop.Venta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Graphic_Interface.ConsultarVentas" target="javapop.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Graphic_Interface.Inicio" target="javapop.Venta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javapop.Venta" target="javapop.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Ventas" source="Graphic_Interface.Inicio" target="javapop.Venta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Venta&gt;"/>
+    <HasRelation name="VentasLocal" source="Graphic_Interface.ConsultarVentas" target="javapop.Venta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Venta&gt;"/>
+    <HasRelation name="Productos" source="javapop.JavaPoP" target="javapop.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Producto&gt;"/>
+    <HasRelation name="producto" source="javapop.Venta" target="javapop.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="propietario" source="javapop.Producto" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Cliente" source="Graphic_Interface.MainMenuCliente" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Graphic_Interface.ConsultarUsuarios" target="javapop.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Graphic_Interface.ClienteProfesionalPremium" target="javapop.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Graphic_Interface.Busqueda" target="javapop.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Cliente" source="Graphic_Interface.ClienteProfesionalPremium" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javapop.JavaPoP" target="javapop.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Usuarios" source="Graphic_Interface.NuevoUsuario" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Cliente&gt;"/>
+    <UseRelation source="Graphic_Interface.Inicio" target="javapop.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Ventas" source="javapop.JavaPoP" target="javapop.Venta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Venta&gt;"/>
+    <IsRelation name="is" source="javapop.ClienteProfesional" target="javapop.Cliente"/>
+    <HasRelation name="Productos" source="Graphic_Interface.Inicio" target="javapop.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Producto&gt;"/>
+    <UseRelation source="Graphic_Interface.MainMenuCliente" target="javapop.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javapop.Producto" target="javapop.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cliente" source="Graphic_Interface.Busqueda" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Cliente" source="Graphic_Interface.BajaProductos" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Usuarios" source="javapop.JavaPoP" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Cliente&gt;"/>
+    <UseRelation source="javapop.JavaPoP" target="javapop.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ProductosLocal" source="Graphic_Interface.Busqueda" target="javapop.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Producto&gt;"/>
+    <HasRelation name="Cliente" source="Graphic_Interface.AltaProductos" target="javapop.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ProductosLocal" source="Graphic_Interface.BajaProductos" target="javapop.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Producto&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

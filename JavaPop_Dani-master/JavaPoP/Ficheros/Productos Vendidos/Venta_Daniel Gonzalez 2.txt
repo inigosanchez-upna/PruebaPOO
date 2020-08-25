@@ -1,0 +1,12 @@
+Nombre producto: Raqueta de tenis
+Descripción: Raqueta del mismísimo Rafa Nadal
+Categoria: Deporte y ocio
+Estado: Bueno
+Precio: 300.0
+Fecha Publicación: 21/12/2020
+Ubicación: Girona
+Fecha: 2020-05-10
+Nombre Vendedor: Jusep
+DNI Vendedor: 54743932E
+Nombre Comprador: Daniel Gonzalez 2
+DNI Comprador: 03215238E
