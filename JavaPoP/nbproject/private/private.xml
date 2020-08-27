@@ -3,14 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/javapop/Producto.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/Busqueda.java</file>
             <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/AltaProductos.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/ConsultarProductos.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/MainMenuCliente.java</file>
             <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/Inicio.java</file>
-            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/javapop/JavaPoP.java</file>
-            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/javapop/Administrador.java</file>
-            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/javapop/ClienteProfesional.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/ConsultarVentas.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/MainMenuAdmin.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/ConsultarUsuarios.java</file>
             <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/NuevoUsuario.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/BajaProductos.java</file>
             <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/Graphic_Interface/ClienteProfesionalPremium.java</file>
-            <file>file:/Users/razvanvc/Documents/GitHub/JavaPop_Dani/JavaPoP/src/javapop/Cliente.java</file>
         </group>
     </open-files>
 </project-private>
